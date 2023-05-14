@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="fnm" type="text" placeholder="First Name" required>
+    <input id="lnm" type="text" placeholder="Last Name" required>
+    <input id="age" type="number" placeholder="Age" required>
+    <input id="eml" type="email" placeholder="Email" required><br>
+    <button id="bttn" type="submit" onclick="show()">Submit</button>
+   <!-- when button onclick calls 'show()' function -->
+    <br>
+    <h3><u>User Details</u></h3>
+<h4 id="n"></h4>
+<h4 id="a"></h4>
+<h4 id="m"></h4>
+
+    <script>
+        
+        function show() {
+            //assigning values from "fnm" to "Fname" variable
+            Fname = document.getElementById("fnm").value;
+            Lname = document.getElementById("lnm").value;
+            Flname = Fname + Lname;
+            Age = document.getElementById("age").value;
+            mail = document.getElementById("eml").value;
+            console.log("Full Name :" + Flname);
+            console.log("Age :" + Age);
+            console.log("E-Mail :" + mail);
+            document.getElementById("n").innerHTML=Flname;
+            document.getElementById("a").innerHTML=Age;
+            document.getElementById("m").innerHTML=mail;
+        }
+    </script>
+</body>
+
+</html>

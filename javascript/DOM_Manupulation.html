@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="aa">Ajmalsha</h3>
+    <h3 id="bb">Aslam</h3>
+    <h3 class="cc">Anwarjan</h3>
+    <h4 class="cc">Jameel</h4>
+    <h4>Jaseel</h4>
+<h1>
+    <img id="newbie" src="WALPAPER.jpg">
+</h1>
+
+    <script>
+
+  //InnerHTML    ById  
+document.getElementById("aa").innerHTML="AJMALSHA S";
+document.getElementById("bb").innerHTML="ASLAM RS";
+
+
+  //InnerHTML    ByClass 
+document.getElementsByClassName("cc")[0].innerHTML="ANWARJAN";
+document.getElementsByClassName("cc")[1].innerHTML="JAMEEL";
+
+
+  //InnerHTML    ByTag and Index
+document.getElementsByTagName("h4")[1].innerHTML="JASEEL";
+
+
+  //Style.color    ById
+document.getElementById("aa").style.color="red";
+document.getElementsByClassName("cc")[1].style.color="green";
+ 
+
+  //Style.color    ByClass
+document.getElementsByClassName("cc")[0].style.color="purple";
+document.getElementsByTagName('h3')[1].style.color="skyblue";
+document.write("DOM Manupulation")
+
+
+//Style.fontFamily  ById
+document.getElementById("aa").style.fontFamily="Arial";
+
+
+  //Image Insirtion
+  document.getElementById("newbie").src="Quote.jpg";
+    </script>
+</body>
+</html>

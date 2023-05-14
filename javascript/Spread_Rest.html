@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Spread And Rest</h3>
+    <script>
+let aa=[1,2,3,4];
+
+//'spread'
+let bb=[...aa];
+console.log(bb);
+
+//'spread'
+const cars={
+  wheels:4,
+  fuelType:"Petrol",
+  Mileage:20,
+  power:1800  
+}
+const jeep={
+    wheel:4,
+  fuelTyp:"Diesel",
+  Mileag:12,
+  powr:2000  
+}
+const Vehicles={...cars,speed:220}  
+console.log(Vehicles);
+ 
+//'rest'
+
+const{wheel, ...rest}=jeep;
+console.log(wheel);
+console.log(rest);
+    </script>
+</body>
+</html>

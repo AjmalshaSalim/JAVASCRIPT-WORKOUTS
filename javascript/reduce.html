@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let array=[1,2,3,4,5,6];
+let newArray=array.map((a)=>a*2);
+console.log(newArray)
+
+let array1=[1,2,3,4,5,6];
+let newArray1=array1.filter((odd)=>odd%2!=0);
+console.log(newArray1);
+
+let array2=[1,2,3];
+let newArray2=array2.reduce((total,value)=>total+value*value*value,0);
+console.log(newArray2);
+
+let array3=[1,2,3,4,5];
+let newArray3=array3.reduce((total,val)=>total+val,0)
+console.log(newArray3);
+
+let val="saad"
+let val2=val.split("")
+console.log(val2);
+let val3=val2.join("")
+console.log(val3);
+console.log(typeof val2);
+
+const arrays=["saad","ajmal","achu"];
+
+arrays.forEach((value,index)=>{
+    console.log(value);
+})
+
+let arrayss=[1,2,3,4,5,6];
+arrayss.forEach((value)=>console.log(value))
+
+let box=[1,2,3,4,5,6];
+let mapbox=box.map((val)=>val*2);
+console.log(mapbox);
+
+let reducebox=box.reduce((total,value)=>total+value);
+console.log(reducebox);
+
+    </script>
+</body>
+</html>

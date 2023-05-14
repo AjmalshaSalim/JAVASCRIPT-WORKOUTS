@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3><u>Array Methods</u></h3>
+    <script>
+
+        //Declaring an array and insirting values
+        let array = [1, 2, 3, 4];
+
+        //Assigning a value to a position of array
+        array[4] = 7;
+
+        //'push' used to insert value to the last of array
+        array.push(8);
+
+        //'pop' used to delete value of the last of array
+        array.pop();
+
+        //'unshift' used to insert value to the first of array
+        array.unshift(5);
+
+        //'shift' used to delete value of the first of array
+        array.shift()
+
+        //'length' used to messure the length of array(not index value)
+        console.log(array.length)
+
+        //''splice' used to remove and insert value from any position of an array
+        //Deleting "0 - 2"
+        array.splice(0, 2)
+        //Insirting '8'on Position 2(index 0,1)th position
+        array.splice(1, 0, 8);
+
+        //'Sort' to sort in an Ascending order
+        array.sort();
+
+        //'reverse' to sort in an Descending order
+        array.reverse();
+        
+
+        console.log(array);
+    </script>
+</body>
+
+</html>
