@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let name=(prompt("enter name"));
+let array=[];
+array=name.split("");
+let limit=array.length;
+let flag=0;
+for(let i=0;i<limit/2;i++){
+    if(array[i]===array[limit-i-1]){
+       flag++; 
+    }else{
+        flag=0;
+    }
+}
+if(flag>=limit/2){
+    console.log("palendrome");
+}else{
+    console.log("not palendrome");
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>
